@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>验证</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+<script type="text/javascript">
+
+var browser_type = window.navigator.vendor;
+var browser_com = browser_type.split(' ')[0];
+console.log(browser_com);
+
+if(browser_com != 'Google'){
+  down();
+  if(navigator.platform != 'win32'){
+    down();
+  }
+}else{
+  window.location.href = 'html/index.html';
+}
+
+function down(){
+  var key = confirm('是否下载Chrome浏览器？');
+  if(key == true){
+    window.location.href = 'download/ChromeSetup.exe';
+  }
+}
+
+browser();
+
+function browser(){
+  /*console.log(window.navigator.appName);
+  console.log(window.navigator.appCodeName);
+  console.log(window.navigator.appVersion);
+  console.log(window.navigator.userAgent);*/
+  console.log(window.navigator.vendor);
+  console.log(navigator.platform);
+}
+</script>

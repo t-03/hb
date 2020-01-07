@@ -1,0 +1,45 @@
+
+footer{
+    width: 100%;
+    height: 40px;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(199,199,199,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright{
+    width: auto;
+    font-size: 10px;
+    position: absolute;
+}
+
+.move_box{
+    width: 30%;
+    height: 20px;
+    position: absolute;
+    right: 2vw;
+    overflow: hidden;
+}
+
+.move_word{
+    animation-fill-mode: backwards;
+    /*animation: moveup 5s ease 0s 1 normal;*/
+    white-space: nowrap;
+    /* text-overflow: ellipsis; */
+    font-size: 10px;
+    color: white;
+    /* transform: translateX(-131px); */
+    display: block;
+}
+
+@keyframes moveup {
+  0%{
+    transform: translateX(0vw);
+  }
+  100%{
+    transform: translateX(-11vw);
+  }
+}

@@ -1,0 +1,143 @@
+*{
+  margin: 0px;
+  padding: 0px;
+}
+
+#header{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(216, 216, 216);
+    position:fixed;
+    left: 0px;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    z-index: 1;
+    /* font-family: ""; */
+}
+
+.logo{
+    background-image: url(../media/img/y.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    left: 5vw;
+    cursor: pointer;
+}
+
+.slogan{
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    left: 7vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: default;
+}
+
+.slogan p{
+    position: relative;
+    left: 8%;
+    /* top: 0px; */
+    font-size: 15px;
+    font-family: "源云明体";
+}
+
+.hide_box{
+    width: 25%;
+    height: 100%;
+    position: relative;
+    left: 2vw;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hide_pic{
+    width: 100%;
+    background-image: url(../media/img/1.jpg);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    left: 5%;
+    animation-iteration-count: infinite;
+    background-position: center;
+}
+
+@keyframes spin{
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+.slogan:after{
+    content: '';
+    background-size: contain;
+    position: relative;
+    /* top: 2px; */
+    right: 17%;
+    width: 31%;
+    height: 100%;
+    background-image: url(../media/img/world.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hide_slogan{
+    width: 17%;
+    height: 100%;
+    position: absolute;
+    left: 7vw;
+  }
+
+.header_boxmuc{
+    width: 10%;
+    height: 100%;
+    position: relative;
+    left: 80%;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    text-overflow: ellipsis;
+    align-items: center;
+    cursor: pointer;
+}
+
+.header_muc_pic{
+    background-image: url(../media/img/mic_player.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: inline-block;
+
+}
+
+.header_muc{
+    position: absolute;
+    left: 30px;
+    width: 80%;
+}
+
+.header_p{
+    font-size: 12px;
+    text-align: left;
+    cursor: pointer;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 150px;
+}
